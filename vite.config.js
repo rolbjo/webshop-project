@@ -8,7 +8,8 @@ import path from 'node:path'
 export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/webshop-project/' : '/',
   build: {
-    target: 'es2015'
+    target: 'es2015',
+    outDir: 'docs'
   },
   plugins: [
     vue(),
